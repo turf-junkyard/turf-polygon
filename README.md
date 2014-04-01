@@ -1,2 +1,2 @@
-turf-Polygon
+turf-polygon
 ============
