@@ -8,5 +8,10 @@ module.exports = function(coordinates, properties){
     },
     "properties": properties
   }
+
+  if(!polygon.properties){
+    polygon.properties = {}
+  }
+  
   return polygon
 }
