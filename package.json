@@ -1,0 +1,28 @@
+{
+  "name": "turf-polygon",
+  "version": "0.1.0",
+  "description": "turf polygon module",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morganherlocker/turf-polygon.git"
+  },
+  "keywords": [
+    "gis",
+    "geojson",
+    "turf",
+    "polygon"
+  ],
+  "author": "morganherlocker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morganherlocker/turf-polygon/issues"
+  },
+  "homepage": "https://github.com/morganherlocker/turf-polygon",
+  "devDependencies": [
+    "tape"
+  ]
+}
