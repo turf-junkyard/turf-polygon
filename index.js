@@ -1,12 +1,12 @@
 module.exports = function(coordinates, properties){
   if(coordinates === null) return new Error('No coordinates passed')
-  var linestring = { 
+  var polygon = { 
     "type": "Feature",
     "geometry": {
-      "type": "LineString",
+      "type": "Polygon",
       "coordinates": coordinates
     },
     "properties": properties
   }
-  return linestring
+  return polygon
 }

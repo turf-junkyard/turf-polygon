@@ -11,4 +11,5 @@ test('polygon', function(t){
   t.equal(poly.geometry.coordinates[0][1][0], 20)
   t.equal(poly.geometry.coordinates[0][2][0], 40)
   t.equal(poly.properties.name, 'test polygon')
+  t.equal(poly.geometry.type, 'Polygon')
 });
