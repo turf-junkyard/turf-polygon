@@ -2,7 +2,7 @@ var test = require('tape');
 var polygon = require('./')
 
 test('polygon', function(t){
-  t.plan(5)
+  t.plan(6)
 
   var poly = polygon([[[5, 10], [20, 40], [40, 0]]], {name: 'test polygon'})
 
