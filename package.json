@@ -22,7 +22,8 @@
     "url": "https://github.com/morganherlocker/turf-polygon/issues"
   },
   "homepage": "https://github.com/morganherlocker/turf-polygon",
-  "devDependencies": [
-    "tape"
-  ]
+  "devDependencies": {
+    "benchmark": "^1.0.0",
+    "tape": "^3.0.3"
+  }
 }

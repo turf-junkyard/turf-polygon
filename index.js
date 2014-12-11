@@ -1,5 +1,5 @@
 module.exports = function(coordinates, properties){
-  if(coordinates === null) return new Error('No coordinates passed')
+  if(coordinates === null) return new Error('No coordinates passed');
   var polygon = { 
     "type": "Feature",
     "geometry": {
@@ -7,11 +7,11 @@ module.exports = function(coordinates, properties){
       "coordinates": coordinates
     },
     "properties": properties
-  }
+  };
 
   if(!polygon.properties){
-    polygon.properties = {}
+    polygon.properties = {};
   }
   
-  return polygon
+  return polygon;
 }
