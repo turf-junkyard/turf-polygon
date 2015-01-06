@@ -5,7 +5,7 @@
  * @module turf/polygon
  * @param {number[][]} rings - an array of LinearRings
  * @param {Object} properties - an optional properties object
- * @return {GeoJSON-Polygon} output - a GeoJSON Polygon object
+ * @return {GeoJSONPolygon} output
  * @example
  * var poly1 = turf.polygon([[[20.0,0.0],[101.0,0.0],[101.0,1.0],[100.0,1.0],[100.0,0.0]]])
  * var poly2 = turf.polygon([[[20.0,0.0],[101.0,0.0],[101.0,1.0],[100.0,1.0],[100.0,0.0]]],
