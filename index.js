@@ -15,11 +15,15 @@
  */
 module.exports = function(coordinates, properties){
   if(coordinates === null) return new Error('No coordinates passed');
-  if ((coordinates[coordinates.length - 1].length !== coordinates[0].length || !coordinates[coordinates.length - 1].every(function(position, index) {
-      return coordinates[0][index] === position;
-    }))) {
-      return new Error('First and last coordinate pair are not equivalent');
+
+  for (var i = 0; i < coordinates.length; i++) {
+    var ring = coordinates[i];
+
+    for (var j = 0; j < ring[ring.length - 1].length; j++) {
+      if (ring[ring.length - 1][j] !== ring[0][j]) return new Error('First and last coordinate pair are not equivalent')
+    }
   };
+
   var polygon = { 
     "type": "Feature",
     "geometry": {
