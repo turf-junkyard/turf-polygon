@@ -15,6 +15,7 @@
  */
 module.exports = function(coordinates, properties){
   if(coordinates === null) return new Error('No coordinates passed');
+  if(coordinates[0] !== coordinates[coordinates.length - 1]) return new Error('First and last coordinate pair are not equivalent');
   var polygon = { 
     "type": "Feature",
     "geometry": {
