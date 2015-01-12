@@ -4,7 +4,7 @@ var polygon = require('./');
 test('polygon', function(t){
   t.plan(7);
 
-  var poly = polygon([[[5, 10], [20, 40], [40, 0]]], {name: 'test polygon'});
+  var poly = polygon([[[5, 10], [20, 40], [40, 0], [5, 10]]] , {name: 'test polygon'});
 
   t.ok(poly);
   t.equal(poly.geometry.coordinates[0][0][0], 5);
