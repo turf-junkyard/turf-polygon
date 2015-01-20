@@ -1,6 +1,5 @@
 /**
- * Generates a new GeoJSON Polygon feature, given an array of coordinates
- * and list of properties.
+ * Takes an array of LinearRings and optionally an {@link Object} with properties and returns a GeoJSON {@link Polygon} feature.
  *
  * @module turf/polygon
  * @param {number[][]} rings - an array of LinearRings
