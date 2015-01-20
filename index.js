@@ -4,7 +4,7 @@
  * @module turf/polygon
  * @param {number[][]} rings - an array of LinearRings
  * @param {Object} properties - an optional properties object
- * @return {GeoJSONPolygon} output
+ * @return {Polygon} output
  * @throws {Error} throw an error if a LinearRing of the polygon has too few positions
  * or if a LinearRing of the Polygon does not have matching Positions at the
  * beginning & end.
