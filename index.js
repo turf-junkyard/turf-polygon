@@ -9,11 +9,17 @@
  * or if a LinearRing of the Polygon does not have matching Positions at the
  * beginning & end.
  * @example
- * var poly1 = turf.polygon([[[20.0,0.0],[101.0,0.0],[101.0,1.0],[100.0,1.0],[100.0,0.0]]])
- * var poly2 = turf.polygon([[[20.0,0.0],[101.0,0.0],[101.0,1.0],[100.0,1.0],[100.0,0.0]]],
- *   {name: 'line 1', distance: 145})
- * console.log(poly1)
- * console.log(poly2)
+ * var polygon = turf.polygon([[
+ *  [-2.275543, 53.464547],
+ *  [-2.275543, 53.489271],
+ *  [-2.215118, 53.489271],
+ *  [-2.215118, 53.464547],
+ *  [-2.275543, 53.464547]
+ * ]], { name: 'poly1', population: 400});
+ *
+ * //=polygon
+ *
+ * //=polygon.properties
  */
 module.exports = function(coordinates, properties){
 
