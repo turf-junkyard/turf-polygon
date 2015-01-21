@@ -2,7 +2,7 @@
  * Takes an array of LinearRings and optionally an {@link Object} with properties and returns a GeoJSON {@link Polygon} feature.
  *
  * @module turf/polygon
- * @param {number[][]} rings - an array of LinearRings
+ * @param {Array<Array<Number>>} rings - an array of LinearRings
  * @param {Object} properties - an optional properties object
  * @return {Polygon} output
  * @throws {Error} throw an error if a LinearRing of the polygon has too few positions
