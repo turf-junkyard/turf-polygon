@@ -1,16 +1,50 @@
-turf-polygon
-============
-[![Build Status](https://travis-ci.org/Turfjs/turf-polygon.svg)](https://travis-ci.org/Turfjs/turf-polygon)
+# turf-polygon
 
-Creates a geojson polygon Feature based on a coordinate array. Properties can be added optionally.
+[![build status](https://secure.travis-ci.org/Turfjs/turf-polygon.png)](http://travis-ci.org/Turfjs/turf-polygon)
+
+turf polygon module
+
+
+### `turf.polygon(rings, properties)`
+
+Takes an array of LinearRings and optionally an Object with properties and returns a GeoJSON Polygon feature.
+
+
+### Parameters
+
+| parameter    | type                   | description                     |
+| ------------ | ---------------------- | ------------------------------- |
+| `rings`      | Array.<Array.<Number>> | - an array of LinearRings       |
+| `properties` | Object                 | - an optional properties object |
+
+
+### Example
 
 ```js
-var polygon = require('turf-polygon')
+var polygon = turf.polygon([[
+ [-2.275543, 53.464547],
+ [-2.275543, 53.489271],
+ [-2.215118, 53.489271],
+ [-2.215118, 53.464547],
+ [-2.275543, 53.464547]
+]], { name: 'poly1', population: 400});
 
-var poly1 = polygon([[[20.0,0.0],[101.0,0.0],[101.0,1.0],[100.0,1.0],[100.0,0.0]]])
-var poly2 = polygon([[[20.0,0.0],[101.0,0.0],[101.0,1.0],[100.0,1.0],[100.0,0.0]]],
-  {name: 'line 1', distance: 145})
+//=polygon
 
-console.log(poly1)
-console.log(poly2)
+//=polygon.properties
 ```
+
+## Installation
+
+Requires [nodejs](http://nodejs.org/).
+
+```sh
+$ npm install turf-polygon
+```
+
+## Tests
+
+```sh
+$ npm test
+```
+
