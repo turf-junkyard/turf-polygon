@@ -2,9 +2,9 @@
  * Takes an array of LinearRings and optionally an {@link Object} with properties and returns a GeoJSON {@link Polygon} feature.
  *
  * @module turf/polygon
- * @param {Array<Array<Number>>} rings - an array of LinearRings
- * @param {Object} properties - an optional properties object
- * @return {Polygon} output
+ * @param {Array<Array<Number>>} rings an array of LinearRings
+ * @param {Object} properties an optional properties object
+ * @return {Polygon} a Polygon feature
  * @throws {Error} throw an error if a LinearRing of the polygon has too few positions
  * or if a LinearRing of the Polygon does not have matching Positions at the
  * beginning & end.
@@ -18,8 +18,6 @@
  * ]], { name: 'poly1', population: 400});
  *
  * //=polygon
- *
- * //=polygon.properties
  */
 module.exports = function(coordinates, properties){
 
