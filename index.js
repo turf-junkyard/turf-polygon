@@ -2,6 +2,7 @@
  * Takes an array of LinearRings and optionally an {@link Object} with properties and returns a GeoJSON {@link Polygon} feature.
  *
  * @module turf/polygon
+ * @category helper
  * @param {Array<Array<Number>>} rings an array of LinearRings
  * @param {Object} properties an optional properties object
  * @return {Polygon} a Polygon feature
