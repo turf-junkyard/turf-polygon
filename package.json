@@ -1,6 +1,6 @@
 {
   "name": "turf-polygon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "turf polygon module",
   "main": "index.js",
   "scripts": {
