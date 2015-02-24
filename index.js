@@ -4,8 +4,8 @@
  * @module turf/polygon
  * @category helper
  * @param {Array<Array<Number>>} rings an array of LinearRings
- * @param {Object} properties an optional properties object
- * @return {Polygon} a Polygon feature
+ * @param {Object=} properties a properties object
+ * @returns {Polygon} a Polygon feature
  * @throws {Error} throw an error if a LinearRing of the polygon has too few positions
  * or if a LinearRing of the Polygon does not have matching Positions at the
  * beginning & end.

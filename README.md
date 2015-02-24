@@ -14,8 +14,8 @@ Takes an array of LinearRings and optionally an Object with properties and retur
 
 | parameter    | type                   | description                     |
 | ------------ | ---------------------- | ------------------------------- |
-| `rings`      | Array.<Array.<Number>> | - an array of LinearRings       |
-| `properties` | Object                 | - an optional properties object |
+| `rings`      | Array.<Array.<Number>> | an array of LinearRings         |
+| `properties` | Object                 | _optional:_ a properties object |
 
 
 ### Example
@@ -30,9 +30,10 @@ var polygon = turf.polygon([[
 ]], { name: 'poly1', population: 400});
 
 //=polygon
-
-//=polygon.properties
 ```
+
+
+**Returns** `Polygon`, a Polygon feature
 
 ## Installation
 
@@ -47,4 +48,5 @@ $ npm install turf-polygon
 ```sh
 $ npm test
 ```
+
 
