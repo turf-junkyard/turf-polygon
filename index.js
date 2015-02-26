@@ -1,11 +1,11 @@
 /**
- * Takes an array of LinearRings and optionally an {@link Object} with properties and returns a GeoJSON {@link Polygon} feature.
+ * Takes an array of LinearRings and optionally an {@link Object} with properties and returns a {@link Polygon} feature.
  *
  * @module turf/polygon
  * @category helper
  * @param {Array<Array<Number>>} rings an array of LinearRings
  * @param {Object=} properties a properties object
- * @returns {Polygon} a Polygon feature
+ * @returns {Feature<Polygon>} a Polygon feature
  * @throws {Error} throw an error if a LinearRing of the polygon has too few positions
  * or if a LinearRing of the Polygon does not have matching Positions at the
  * beginning & end.
