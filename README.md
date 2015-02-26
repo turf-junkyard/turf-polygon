@@ -7,15 +7,15 @@ turf polygon module
 
 ### `turf.polygon(rings, properties)`
 
-Takes an array of LinearRings and optionally an Object with properties and returns a GeoJSON Polygon feature.
+Takes an array of LinearRings and optionally an Object with properties and returns a Polygon feature.
 
 
 ### Parameters
 
-| parameter    | type                   | description                     |
-| ------------ | ---------------------- | ------------------------------- |
-| `rings`      | Array.<Array.<Number>> | an array of LinearRings         |
-| `properties` | Object                 | _optional:_ a properties object |
+| parameter    | type                         | description                     |
+| ------------ | ---------------------------- | ------------------------------- |
+| `rings`      | Array\.\<Array\.\<Number\>\> | an array of LinearRings         |
+| `properties` | Object                       | _optional:_ a properties object |
 
 
 ### Example
@@ -33,7 +33,7 @@ var polygon = turf.polygon([[
 ```
 
 
-**Returns** `Polygon`, a Polygon feature
+**Returns** `Feature.<Polygon>`, a Polygon feature
 
 ## Installation
 
