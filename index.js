@@ -20,7 +20,7 @@
  *
  * //=polygon
  */
-module.exports = function(coordinates, properties){
+module.exports = function(coordinates, properties) {
 
   if (coordinates === null) throw new Error('No coordinates passed');
 
